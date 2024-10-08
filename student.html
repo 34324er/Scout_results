@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة بيانات المخدوم</title>
+    <link rel="stylesheet" href="./student.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إدارة بيانات المخدومين</h1>
+        
+        <form id="serviceForm" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">اسم المخدوم:</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسم المخدوم" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="stage">المرحلة:</label>
+                <input type="text" id="stage" name="stage" placeholder="أدخل المرحلة" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="attendance">نسبة الحضور:</label>
+                <input type="number" id="attendance" name="attendance" placeholder="أدخل نسبة الحضور" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="absence">نسبة الغياب:</label>
+                <input type="number" id="absence" name="absence" placeholder="أدخل نسبة الغياب" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="code">كود المخدوم:</label>
+                <input type="text" id="code" name="code" placeholder="أدخل كود المخدوم" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="addButton">إضافة المخدوم</button>
+                <button type="button" id="editButton">تعديل المخدوم</button>
+                <button type="button" id="deleteButton">حذف المخدوم</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background:url(./img/تصميم\ بدون\ عنوان\ \(1\).png) center center/cover no-repeat  ;
+    display: flex;
+    height: 500px;
+    margin: 0;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 600px;
+    width:100%;
+    background: rgb(0,0,0,0.5);
+}  
+
+body *{
+    z-index: 30;
+}
+
+
+.container {
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+}
+.container h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;  
+    margin-bottom: 15px; 
+}
+
+
+
+h2{
+    color: white;
+    font-size: 30px;
+   
+}
+
+.title{
+    margin-bottom: 90px;
+    margin-top: 30px;
+
+}
+
+form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom:130px ;
+    border: 1px solid white ;
+    padding:40px;
+    border-radius: 43px;
+    
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    background: 0;
+    border: 1px solid white;
+    text-align: right;
+    color:white;
+    
+}
+
+input::placeholder{
+    color: white;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+/* الشاشات الكبيرة فوق 1200px */
+@media (min-width: 1200px) {
+    .container h1 {
+        font-size: 50px;
+    }
+    
+    .container h2 {
+        font-size: 30px;
+    }
+    
+    form {
+        width: 400px;
+        padding: 40px;
+    }
+    
+    input[type="text"] {
+        font-size: 16px;
+    }
+    
+    button {
+        font-size: 16px;
+    }
+}
+
+/* الشاشات المتوسطة (بين 768px و 1200px) */
+@media (max-width: 1200px) and (min-width: 768px) {
+    .container h1 {
+        font-size: 40px;
+    }
+    
+    .container h2 {
+        font-size: 25px;
+    }
+    
+    form {
+        width: 350px;
+        padding: 35px;
+    }
+    
+    input[type="text"] {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 14px;
+    }
+}
+
+/* الشاشات الصغيرة (أقل من 768px) */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+    
+    .container h1 {
+        font-size: 30px;
+    }
+    
+    .container h2 {
+        font-size: 20px;
+    }
+    
+    form {
+        width: 300px;
+        padding: 30px;
+        margin-left: 20px;
+        margin-bottom: 100px;
+    }
+    
+    input[type="text"] {
+        font-size: 12px;
+    }
+    
+    button {
+        font-size: 12px;
+    }
+}
+
+/* الشاشات الأصغر من 500px (مثل الهواتف المحمولة) */
+@media (max-width: 500px) {
+    .container h1 {
+        font-size: 20px;
+    }
+    
+    .container h2 {
+        font-size: 16px;
+    }
+    
+    form {
+        width: 225px;
+        padding: 20px;
+        margin-left: 0px;
+
+    }
+    
+    input[type="text"] {
+        font-size: 10px;
+    }
+    
+    button {
+        font-size: 10px;
+    }
+}
